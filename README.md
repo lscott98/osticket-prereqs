@@ -20,16 +20,33 @@ This project involved setting up all the necessary prerequisites and installing 
 
 - Windows 10</b> (21H2)
 
-
 <h2>Installation Steps</h2>
-
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+First thing to do when logging into Microsfot Azure is creating a Resource Group which you can find by typing in the search bar, give it any name you want then click review and create
 </p>
 <br />
+
+<p>
+First thing to do when logging into Microsfot Azure is creating a Resource Group which you can find by typing in the search bar, give it any name you want then click review and create
+</p>
+<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+![image](https://github.com/user-attachments/assets/2421ecff-8f2c-48d5-af98-2ab4b1feac09)
+
+
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
