@@ -201,55 +201,7 @@ Next, set up the login credentials and make a note of them to ensure you don't f
 
 
 
-
-
-<p>
-![image](https://github.com/user-attachments/assets/a3a6eb1b-6926-4198-bc3d-d9882d5d31c2)
-</p>
-<br />
-
-
-
-
-
-
-
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-
-
-
-
-
-
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-
-
-
-
-
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-
-
-
-
-
-
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+![image](https://github.com/user-attachments/assets/a40c56ed-f384-4770-8fac-7fbff626905d)
 
 
 
@@ -260,12 +212,58 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+Open IIS as an admin:</p>
+<br />
+
+
+![image](https://github.com/user-attachments/assets/d2d75517-fa9d-46fa-863b-6e37f9689e38)
+
+
+
+
+
+
+<p>
+Next, navigate to PHP Manager, select "Register new PHP version," and then choose the specified file.</p>
 <br />
 
 
 
+
+![image](https://github.com/user-attachments/assets/d8e789d4-3cbe-4135-a187-de1589b7baff)
+
+
+
+
+
+<p>
+Return to the osticketVM Home, and under Manage Server on the right side, click Restart.</p>
+<br />
+
+
+![image](https://github.com/user-attachments/assets/3c68e99e-7287-4c48-9d2f-f15e8dec207e)
+
+
+
+
+<p>
+Next download osTicket and copy the upload file to the wwwroot file in the inetpub directory:</p>
+<br />
+
+
+![image](https://github.com/user-attachments/assets/7d8dc52c-7e5c-489e-93c8-34f2a21fb87d)
+
+
+
+
+
+
+<p>
+Reload IIS and restart the server as I did before, then click Browse *80 (http) on the right side:</p>
+<br />
+
+
+![image](https://github.com/user-attachments/assets/3510d21e-7dc7-4107-ad1f-7ba65ac83806)
 
 
 
@@ -274,12 +272,97 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+This page should open: <br />
+
+![image](https://github.com/user-attachments/assets/a2733e82-68f5-4a3e-9c76-fca7fe836383)
+
+
+
+
+
+<p>
+You'll notice that some extensions are not enabled. To enable them in IIS, go to Sites > Default Web Site > osTicket. Then, click on PHP Manager and select "Enable or disable an extension." Enable php_imap.dll, php_intl.dll, and php_opcache.dll.</p>
+<br />
+
+
+![image](https://github.com/user-attachments/assets/ce4ce800-ed8e-475a-9218-460f7f31d8de)
+
+
+
+
+
+<p>
+See the changes there 
+<br />
+
+
+![image](https://github.com/user-attachments/assets/6cf8914f-15bc-40b6-ac75-9bf2aa083d53)
+
+
+
+
+
+<p>
+Next, navigate to C drive > osTicket > include in File Explorer and rename ost-sampleconfig.php by removing "sample" from the filename.</p>
+<br />
+
+![image](https://github.com/user-attachments/assets/a8513c80-a3b2-437b-8f9a-766882a653e2)
+
+
+
+
+<p>
+Right-click on ost-config.php> Properties> Security> Advanced> Disable Inheritance> Remove all inherited permissions from this object:</p>
 <br />
 
 
 
+![image](https://github.com/user-attachments/assets/08bcd11f-40ec-4522-92eb-a13b26bdb53a)
+
+
+
+
+<p>
+Click the Add button to assign permissions to the file. Select a principal, type "Everyone," click Check Names, then click OK. Ensure all permissions are checked, then click OK again, followed by Apply and OK.</p>
+<br />
+
+
+![image](https://github.com/user-attachments/assets/5c067a5b-c813-4f40-9e76-b2828286d7f0)
+
+
+
+
+
+<p>
+Hit continue on the osTicket web page in the browser and fill out the set up page:<br />
+
+
+![image](https://github.com/user-attachments/assets/509d8520-a1a2-4e32-bd2a-189cd47b1b50)
+
+
+
+
+
+
+<p>
+Before setting up the database, you'll need to connect to it using HeidiSQL. Install HeidiSQL using the setup links provided.</p>
+<br />
+
+
+
+![image](https://github.com/user-attachments/assets/2408153d-9734-4b49-9437-0231edbe1f5f)
+
+
+
+
+
+<p>
+In HeidiSQL click New> Username = root> Password = mySQL password from mySQL setup> Open:</p>
+<br />
+
+
+
+![image](https://github.com/user-attachments/assets/62ea6998-a8a3-4fac-b4b0-c7e7cec638d2)
 
 
 
@@ -287,8 +370,24 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 
+<p>
+In HeidiSQL, right-click on Unnamed, select Create, and then choose New Database. Name the database osTicket and click OK. After that, proceed to complete the database section of the osTicket setup. Click Install Now when you're finished.</p>
+<br />
 
 
+
+![image](https://github.com/user-attachments/assets/c3f6a6bf-0629-401a-aab7-507a4709fc76)
+
+
+
+
+
+<p>
+For the final steps, navigate to C drive > inetpub > wwwroot > osTicket, locate the setup file, and delete it. Then go to C drive > inetpub > wwwroot > osTicket > include, right-click on ost-config.php, select Properties, then go to Security, and click on Advanced. Select Everyone, click Edit, and ensure that only Read & Execute and Read are checked. Finally, apply the changes.</p>
+<br />
+
+
+![image](https://github.com/user-attachments/assets/cace3442-3e04-4a52-9597-ac4e25272f31)
 
 
 
