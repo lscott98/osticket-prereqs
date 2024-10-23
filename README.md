@@ -6,7 +6,7 @@
 This project involved setting up all the necessary prerequisites and installing osTicket from the ground up. This was carried out on a Windows 10 virtual machine that I created in Azure. osTicket is a popular and reliable open-source help desk ticketing system. 
 
 
-<h2>Video Demonstration</h2>
+
 
 
 <h2>Environments and Technologies Used</h2>
